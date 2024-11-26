@@ -4,76 +4,135 @@
 
 body {
     margin: 0;
+    background-image: url(AAOD_Background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face {
+    font-family:vogue;
+    src: url(vogue.ttf);
+  }
+
+@font-face {
+    font-family:redaction;
+    src: url(Redaction35Italic-rgDrB.otf);
+}
+
+.h1 {
+    font-family: vogue;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.p1 {
+    font-family: redaction;
+    font-size: 15px;
+    color: black;
+    text-align: center;
 }
 
 img {
     max-width:100%;
-}
+    transition: transform linear;
+  }
+  img:hover {
+    transform: rotate(45deg);
+  }
 
 .main {
     height: 100vh;
     width: 100%;
-    background: blue;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
 }
 
 .arc {
-    width: 1200px;
-    height: 800px;
-    background: pink;
+    width: 1600px;
+    height: 600px;
     position: relative;
 }
 
+.title {
+    width: 1600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .dove1 {
-    width: 150px;
-    height: 150px;
-    background: gray;
-    border: solid 1px black;
+    width: 250px;
+    height: 250px;
+    background: gay;
+    border: solid 1px back;
     position: absolute;
     left: 10px;
-    bottom: 150px;
+    top: 275px;
 }
 
 .dove2 {
-    width: 150px;
-    height: 150px;
-    background: gray;
-    border: solid 1px black;
+    width: 250px;
+    height: 250px;
+    background: gay;
+    border: solid 1px back;
     position: absolute;
-    top: 285px;
-    left: 225px;
-
+    top: 125px;
+    left: 310px;
 }
 
 .dove3 {
-    width: 150px;
-    height: 150px;
-    background: gray;
-    border: solid 1px black;
+    width: 250px;
+    height: 250px;
+    background: gay;
+    border: solid 1px back;
     position: absolute;
-    top: 100px;
-    left: 525px;
+    top: 25px;
+    left: 675px;
 }
 
 .dove4 {
-    width: 150px;
-    height: 150px;
-    background: gray;
-    border: solid 1px black;
+    width: 250px;
+    height: 250px;
+    background: gay;
+    border: solid 1px back;
     position: absolute;
-    top: 285px;
-    right: 225px;
+    top: 125px;
+    right: 310px;
 }
 
 .dove5 {
-    width: 150px;
-    height: 150px;
-    background: gray;
-    border: solid 1px black;
+    width: 250px;
+    height: 250px;
+    background: gay;
+    border: solid 1px back;
     position: absolute;
     right: 10px;
-    bottom: 150px;
+    top: 275px;
 }
+
+ /* unvisited link */
+ a:link {
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: black;
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+  } 

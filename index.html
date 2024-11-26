@@ -7,33 +7,41 @@
     <title>An Arc Of Doves</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="png" href="dovefavicon.png">
 
 </head>
 
 <body>
 
+    <audio id="anarcofdoves" src="anarcofdoves.mp3" loop></audio>
+
+    <div class="sound" onclick="play(), hide()">
+        <img id="dovesound" src="dovesound.png" class="hover">
+        <p id="click" class="p1 pointertext">click</p>
+    </div>
+
     <div class="main">
 
         <div class="arc">
 
-            <div class="dove1">
-                <img src="dove1.png">
+            <div class="dove1" onclick="show1()">
+                <img src="dove1.png" class="hover">
             </div>
 
-            <div class="dove2">
-                <img src="dove2.png">
+            <div class="dove2" onclick="show2()">
+                <img src="dove2.png" class="hover">
             </div>
 
-            <div class="dove3">
-                <img src="dove3.png">
+            <div class="dove3" onclick="show3()">
+                <img src="dove3.png" class="hover">
             </div>
 
-            <div class="dove4">
-                <img src="dove4.png">
+            <div class="dove4" onclick="show4()">
+                <img src="dove4.png" class="hover">
             </div>
 
-            <div class="dove5">
-                <img src="dove5.png">
+            <div class="dove5" onclick="show5()">
+                <img src="dove5.png" class="hover">
             </div>
 
         </div>
@@ -42,13 +50,65 @@
 
            <p class="h1">
             
-            an arc of doves<br><br><em class="p1"><a href="https://www.instagram.com/iancovert/" target="_blank">ian covert</a></em>
+            an arc of doves<br><em class="p1"><a href="https://www.instagram.com/iancovert/" target="_blank">ian covert</a></em>
             
             </p>
 
         </div>
 
     </div>
+
+    <div id="page1" class="page1">
+        
+        <div class="xout" onclick="hide1()">
+            <p class="p1 pointertext">home</p>
+        </div>
+
+        this is page number 1
+    
+    </div> 
+
+    <div id="page2" class="page1">
+        
+        <div class="xout" onclick="hide2()">
+            <p class="p1 pointertext">home</p>
+        </div>
+
+        this is page number 2
+    
+    </div>
+
+    <div id="page3" class="page1">
+        
+        <div class="xout" onclick="hide3()">
+            <p class="p1 pointertext">home</p>
+        </div>
+
+        this is page number 3
+    
+    </div>
+
+    <div id="page4" class="page1">
+        
+        <div class="xout" onclick="hide4()">
+            <p class="p1 pointertext">home</p>
+        </div>
+
+        this is page number 4
+    
+    </div>
+
+    <div id="page5" class="page1">
+        
+        <div class="xout" onclick="hide5()">
+            <p class="p1 pointertext">home</p>
+        </div>
+
+        this is page number 5
+    
+    </div>
+
+<script src="main.js"></script>
 
 </body>
 

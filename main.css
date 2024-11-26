@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-image: url(AAOD_Background.png);
+    background-image: url(dovebackground.png);
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
@@ -33,15 +33,31 @@ body {
     font-size: 15px;
     color: black;
     text-align: center;
+    line-height: 0;
+    margin: 0;
+}
+
+.p1.pointertext {
+    cursor: pointer;
 }
 
 img {
     max-width:100%;
     transition: transform linear;
   }
-  img:hover {
+  
+.hover:hover {
     transform: rotate(45deg);
+    cursor: pointer;
   }
+
+.sound {
+    width: 50px;
+    height: 70px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
 
 .main {
     height: 100vh;
@@ -136,3 +152,29 @@ img {
   a:active {
     color: black;
   } 
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background: lightcyan;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.xout {
+    height: 25px;
+    width: 50px;
+    border: solid 1px black;
+    background: white;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

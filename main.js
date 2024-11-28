@@ -52,3 +52,12 @@ function show5() {
 function hide5() {
     document.getElementById("page5").style.visibility= "hidden";
 }
+
+
+function showabout() {
+    document.getElementById("about").style.visibility= "visible";
+}
+
+function hideabout() {
+    document.getElementById("about").style.visibility= "hidden";
+}

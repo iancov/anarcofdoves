@@ -64,6 +64,21 @@ body {
     }
 }
 
+@keyframes greenbow {
+    0% {
+        background-color: #ffffff;
+    }
+    33% {
+        background-color: #d6dc96;
+    }
+    66% {
+        background-color: #f1e492;
+    }
+    100% {
+        background-color: #ffffff;
+    }
+}
+
 .p1 {
     font-family: redaction;
     font-size: 15px;
@@ -105,9 +120,12 @@ img {
 }
 
 .arc {
-    width: 1600px;
+    width: 88%;
     height: 600px;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .title {
@@ -122,51 +140,39 @@ img {
 .dove1 {
     width: 250px;
     height: 250px;
-    background: gay;
     border: solid 1px back;
-    position: absolute;
+    /* position: absolute;
     left: 10px;
-    top: 275px;
+    top: 275px; */
+    margin-top: 275px;
 }
 
 .dove2 {
     width: 250px;
     height: 250px;
-    background: gay;
     border: solid 1px back;
-    position: absolute;
-    top: 125px;
-    left: 310px;
+    margin-top: 125px;
 }
 
 .dove3 {
     width: 250px;
     height: 250px;
-    background: gay;
     border: solid 1px back;
-    position: absolute;
-    top: 25px;
-    left: 675px;
+    margin-top: 25px;
 }
 
 .dove4 {
     width: 250px;
     height: 250px;
-    background: gay;
     border: solid 1px back;
-    position: absolute;
-    top: 125px;
-    right: 310px;
+    margin-top: 125px;
 }
 
 .dove5 {
     width: 250px;
     height: 250px;
-    background: gay;
     border: solid 1px back;
-    position: absolute;
-    right: 10px;
-    top: 275px;
+    margin-top: 275px;
 }
 
  /* unvisited link */
@@ -218,6 +224,13 @@ img {
 .about {
     height: 76vh;
     width: 75%;
+
+    animation-name: greenbow;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+
     background: white;
     border: solid 1px black;
     visibility: hidden;

@@ -79,6 +79,46 @@ body {
     }
 }
 
+@keyframes float {
+    0% {
+        margin-top: -62.5px;
+    }
+    100% {
+        margin-top: -50px;
+    }
+}
+
+@keyframes sink {
+    0% {
+        margin-top: -37.5px;
+    }
+    100% {
+        margin-top: -50px;
+    }
+}
+
+@keyframes slide {
+    0% {
+        margin-top: -25px;
+        margin-left: -25px;
+    }
+    100% {
+        margin-top: -25px;
+        margin-right: -25px;
+    }
+}
+
+@keyframes switch {
+    0% {
+        margin-top: -25px;
+        margin-right: -25px;
+    }
+    100% {
+        margin-top: -25px;
+        margin-left: -25px;
+    }
+}
+
 .p1 {
     font-family: redaction;
     font-size: 15px;
@@ -86,6 +126,38 @@ body {
     text-align: center;
     line-height: 0;
     margin: 0;
+}
+
+.labelanimate1 {
+    animation-name: rainbow, float;
+    animation-duration: 8s, 2s;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: normal, alternate;
+    animation-timing-function: linear, linear;
+}
+
+.labelanimate2 {
+    animation-name: rainbow, slide;
+    animation-duration: 8s, 2s;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: normal, alternate;
+    animation-timing-function: linear, linear;
+}
+
+.labelanimate3 {
+    animation-name: rainbow, sink;
+    animation-duration: 8s, 2s;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: normal, alternate;
+    animation-timing-function: linear, linear;
+}
+
+.labelanimate4 {
+    animation-name: rainbow, switch;
+    animation-duration: 8s, 2s;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: normal, alternate;
+    animation-timing-function: linear, linear;
 }
 
 .p1.pointertext {
@@ -141,10 +213,9 @@ img {
     width: 250px;
     height: 250px;
     border: solid 1px back;
-    /* position: absolute;
-    left: 10px;
-    top: 275px; */
     margin-top: 275px;
+    display: flex;
+    flex-direction: column;
 }
 
 .dove2 {
@@ -208,13 +279,13 @@ img {
 }
 
 .xout {
-    height: 25px;
-    width: 50px;
-    border: solid 1px black;
+    height: 37.5px;
+    width: 100%;
+    border-top: solid 1px black;
     background: white;
     position: fixed;
-    bottom: 10px;
-    left: 10px;
+    bottom: 0px;
+    left: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,4 +324,26 @@ img {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.albumcover {
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+    animation-name: albumspin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@keyframes albumspin {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
 }

@@ -61,3 +61,12 @@ function showabout() {
 function hideabout() {
     document.getElementById("about").style.visibility= "hidden";
 }
+
+
+function hidephoto() {
+    document.getElementById("sidephoto").style.visibility= "hidden";
+}
+
+function hidealbum() {
+    document.getElementById("album").style.visibility= "hidden";
+}

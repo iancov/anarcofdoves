@@ -67,6 +67,10 @@ function hidephoto() {
     document.getElementById("sidephoto").style.visibility= "hidden";
 }
 
+function hidemac() {
+    document.getElementById("macphoto").style.visibility= "hidden";
+}
+
 function hidealbum() {
     document.getElementById("album").style.visibility= "hidden";
 }

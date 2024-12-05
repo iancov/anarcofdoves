@@ -63,14 +63,37 @@ function hideabout() {
 }
 
 
+function showphoto() {
+    document.getElementById("sidephoto").style.visibility= "visible";
+}
+
 function hidephoto() {
     document.getElementById("sidephoto").style.visibility= "hidden";
+}
+
+
+function showmac() {
+    document.getElementById("macphoto").style.visibility= "visible";
 }
 
 function hidemac() {
     document.getElementById("macphoto").style.visibility= "hidden";
 }
 
+
+function showalbum() {
+    document.getElementById("album").style.visibility= "visible";
+}
+
 function hidealbum() {
     document.getElementById("album").style.visibility= "hidden";
+}
+
+
+function showjamie() {
+    document.getElementById("jamiephoto").style.visibility= "visible";
+}
+
+function hidejamie() {
+    document.getElementById("jamiephoto").style.visibility= "hidden";
 }
